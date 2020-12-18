@@ -1,0 +1,156 @@
+
+
+
+* {
+	text-decoration: none; /*把底線去掉*/
+	font-family: "微軟正黑體";
+}
+
+/*Header:導覽列*/
+header {
+/*	background-color: yellow;*/
+	width: 100%;
+	height: 100px;
+}
+
+header .header-brand {
+	font-size: 31px;
+	font-weight: 900;
+	color: #111;
+	display: block;
+	margin: 31px auto;
+	text-align: left;
+	line-height: 38px;
+	padding: 0px 20px 0px 40px;
+	border-right: 3px solid #111;
+	float: left;
+}
+
+header nav ul {
+	display: block;
+	margin: 20px 0px 0px 20px;
+	float: left;
+	width: max-content;
+}
+
+header nav ul li {
+	display: inline-block; /*清單併排*/
+	float: left; /*靠左*/
+	list-style: none; /*左邊標點去掉*/
+	padding: 0 40px;
+}
+
+header nav ul li a {
+	font-size: 25px;
+	color:#111;
+	line-height: 60px;
+}
+
+header .header-login {
+	display: block;
+	font-size: 20px;
+	color: #111;
+	line-height: 38px;
+	border: 1px solid #111;
+	float: right;
+	margin-right: 40px;
+	margin-top:30px;
+	padding: 0 20px;
+}
+
+/*main:橫幅*/
+.main-banner {
+	width: 100%;
+	height: 450px;
+	background-image: url('img/banner.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: table;
+}
+
+.main-banner-text {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.main-banner-text h1 {
+	font-size: 60px;
+	font-weight: 900;
+	line-height: 70px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 2px 8px #111;
+}
+
+.main-banner-text h2 {
+	font-family: Langar;
+	display: block;
+	margin: 0 auto;
+	font-size: 28px;
+	font-weight: 100;
+	font-style: italic;
+	line-height: 40px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 2px 2px 8px #111;	
+	word-spacing: 15px;
+}
+
+/*main:內容*/
+.main-content {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.main-content div {
+	width: calc(50% - 20px) !important;
+	margin:20px 10px 0px;
+	height: 200px;
+	background-color: #f2f2f2;
+	float:left;
+	display: table;
+}
+.main-content div h3 {
+	font-size: 28px;
+	font-weight: 600;
+	color: #111;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*footer*/
+footer {
+	width: calc(100% - 80px);
+	margin: 0 auto;
+	margin-top:20px;
+	padding:40px 40px;
+	background-color: #111;
+	overflow: hidden;
+}
+footer .footer-contact {
+	display: block;
+	width: max-content;
+	float: left;
+	padding-left: 30px;
+}
+footer .footer-contact li {
+	font-size: 24px;
+	color: #fff;
+	line-height: 40px;
+	list-style: none;
+}
+footer .footer-sns {
+	width: 50px;
+	float: right;
+}
+footer .footer-sns img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+
+
+
+
