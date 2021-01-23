@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>動畫</title>
+    <style type="text/css">
+        div {
+			color:#fff;
+			font-size:18px;
+            width:100px;
+            height:100px;
+            margin:5px;
+            text-align:center;
+            line-height:100px;
+            position: absolute;
+            animation-name:boxmove;
+            animation-duration:5s;			
+        }
+        @keyframes boxmove {
+            from {
+                left:0px;
+            }
+            to {
+                left:300px;
+            }
+        }
+        #box1 {
+            top:0px;
+            background:#f00;
+			animation-fill-mode: none;
+        }
+        #box2 {
+            top:110px;
+            background: #0ca810;
+			animation-fill-mode: forwards;
+        }
+        #box3 {
+            top:220px;
+            background: #0cca11;
+			animation-fill-mode: backwards;
+        }
+        #box4 {
+            top:330px;
+            background: #39fc1b;
+			animation-fill-mode: both;
+        }	
+    </style>
+
+</head>
+
+<body>
+
+<div id="box1">none</div>
+<div id="box2">forwards</div>
+<div id="box3">backwards</div>
+<div id="box4">both</div>
+
+
+</body>
+
+
+</html>

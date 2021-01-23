@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>動畫</title>
+    <style type="text/css">
+        div {
+			color:#fff;
+			font-size:18px;
+            width:100px;
+            height:100px;
+            margin:5px;
+            text-align:center;
+            line-height:100px;
+            position: absolute;
+            animation-name:boxmove;
+            animation-duration:10s;
+			animation-iteration-count:infinite;			
+        }
+        @keyframes boxmove {
+            from {
+                left:0px;
+            }
+            to {
+                left:300px;
+            }
+        }
+        #box1 {
+            top:0px;
+            background:#f00;
+            animation-timing-function:linear;
+        }
+        #box2 {
+            top:110px;
+            background: #0ca810;
+            animation-timing-function:ease;
+        }
+        #box3 {
+            top:220px;
+            background: #0cca11;
+            animation-timing-function:ease-in;
+        }
+        #box4 {
+            top:330px;
+            background: #39fc1b;
+            animation-timing-function:ease-out;
+        }
+        #box5 {
+            top:440px;
+            background: #1DD5AF;
+            animation-timing-function:ease-in-out;
+        }		
+    </style>
+
+</head>
+
+<body>
+
+<div id="box1">linear</div>
+<div id="box2">ease</div>
+<div id="box3">ease-in</div>
+<div id="box4">ease-out</div>
+<div id="box5">ease-in-out</div>
+
+
+</body>
+
+
+</html>

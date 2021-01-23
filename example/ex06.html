@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>動畫</title>
+    <style type="text/css">
+        div {
+			color:#fff;
+			font-size:18px;
+            width:100px;
+            height:100px;
+            margin:5px;
+            text-align:center;
+            line-height:100px;
+            position: absolute;
+            animation-name:boxmove;
+            animation-duration:5s;	
+			animation-iteration-count:infinite;		
+            top:0px;
+            background:#f00;		
+        }
+		
+        @keyframes boxmove {
+            from {
+                left:0px;
+            }
+            to {
+                left:300px;
+            }
+        }
+		
+		div:hover {
+			animation-play-state:paused;
+		}
+    </style>
+
+</head>
+
+<body>
+
+<div></div>
+
+
+
+</body>
+
+
+</html>
